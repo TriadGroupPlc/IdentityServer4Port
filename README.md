@@ -6,6 +6,11 @@
 - Minimal API
 - Swagger
 - Authentication
+- 
+### What#s in the box
+IdentityServer4                         -       Token Service
+IdentityServer4PortApi                  -       The API to be protected
+IdentityServer4PortConsoleClient        -       The client interacting with the API
 
 ### Porting IdentityServer4
 
