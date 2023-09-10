@@ -6,8 +6,8 @@
 - Minimal API
 - Swagger
 - Authentication
-- 
-### What#s in the box
+
+### What's in the repo
 - **IdentityServer4**                         -       *Token Service*
 - **IdentityServer4PortApi**                  -       *The API to be protected*
 - **IdentityServer4PortConsoleClient**        -       *The client interacting with the API*
@@ -111,24 +111,24 @@ The above code registers the IdentityServer4 service set some basic options and 
 The `Startup.cs` class will be used in the `Program.cs` when configuring the Web Application Builder services:
 
 ```
-using IdentityServer;
-using Serilog;
+    using IdentityServer;
+    using Serilog;
 
-var builder = WebApplication.CreateBuilder(args);
+    var builder = WebApplication.CreateBuilder(args);
 
-Functions.BuildLogger();
-builder.Logging.AddSerilog();
+    Functions.BuildLogger();
+    builder.Logging.AddSerilog();
 
-var startup = new Startup(builder.Configuration);
-startup.ConfigureServices(builder.Services);
+    var startup = new Startup(builder.Configuration);
+    startup.ConfigureServices(builder.Services);
 
-var app = builder.Build();
+    var app = builder.Build();
 
-startup.Configure(app, app.Environment);
+    startup.Configure(app, app.Environment);
 
-// endpoints
+    // endpoints
 
-app.Run();
+    app.Run();
 ```
 
 The code above is fairly simply we have using statements (that can be [relocated](https://anthonygiretti.com/2021/07/18/introducing-c-10-global-usings-example-with-asp-net-core-6/) 
