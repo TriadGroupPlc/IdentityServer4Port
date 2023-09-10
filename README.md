@@ -8,9 +8,9 @@
 - Authentication
 - 
 ### What#s in the box
-- IdentityServer4                         -       *Token Service*
-- IdentityServer4PortApi                  -       *The API to be protected*
-- IdentityServer4PortConsoleClient        -       *The client interacting with the API*
+- **IdentityServer4**                         -       *Token Service*
+- **IdentityServer4PortApi**                  -       *The API to be protected*
+- **IdentityServer4PortConsoleClient**        -       *The client interacting with the API*
 
 ### Porting IdentityServer4
 
@@ -21,7 +21,7 @@ open the solution in Visual Studio (2022 used here).
 
 This solution is based on .NET Core 3.1 and will require porting to .NET 7 - we will do this by creating a .NET 7 project called *IdentityServer* in a new solution.
 
-#### New project structure
+#### New project structure - IdentityServer
 
 There are some differences now  between .NET Core 3.1 and newer dotnet projects and we focus on Minimal API in this guide:
 
@@ -55,7 +55,7 @@ Empty the contents of `Program.cs` class and copy-paste the following code:
 			app.Run();
 ```
 
-Add the following two packages to the project:
+Add the following two packages to the **IdentityServer** project:
 
 - IdentityServer4
 - Serilog.AspNetCore
