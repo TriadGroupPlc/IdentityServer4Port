@@ -292,4 +292,4 @@ https://localhost:5000/.well-known/openid-configuration which should display a J
 
 ### GitHub repository
 
-The repository provides the ported IdentityServer4 service running as a Token Server with an example API and clients to demonstrate username password login with token response using ResourceOwnerPassword grant (allows a client to send username &amp; password to the token service and get an access token back representing the user).
+The [repository](https://github.com/tahir-khalid/IdentityServer4Port) provides the ported IdentityServer4 service running as a Token Server with an example API and clients to demonstrate username password login with token response using ResourceOwnerPassword grant (allows a client to send username &amp; password to the token service and get an access token back representing the user).
