@@ -1,5 +1,5 @@
 # IdentityServer4 Port &amp; playground
-## preamble
+## Preamble
 
 IdentityServer4 has been a popular open source OAuth 2.0 and OpenID Connect framework for ASP.NET Core for several years. With the release of .NET 7 and ASP.NET Core 7, it is time to update IdentityServer4 to take advantage of the latest features and improvements in the .NET ecosystem.
 
