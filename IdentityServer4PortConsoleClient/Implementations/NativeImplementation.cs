@@ -30,8 +30,8 @@ namespace IdentityServerTest.ConsoleApp.Implementations
                     // Issue: https://github.com/georgekosmidis/IdentityServer4.SetupSample/issues/1
                     // GrantType = "password",
 
-                    ClientId = "ConsoleApp_ClientId",
-                    ClientSecret = "secret_for_the_consoleapp",
+                    ClientId = "83A0DD78191B4C3F8F932E27E95852E6",
+                    ClientSecret = "15F47BBA443B42D9B5AFA06648477F86",
                     Scope = "IdentityServer4PortClientApi",
 
                     UserName = username,

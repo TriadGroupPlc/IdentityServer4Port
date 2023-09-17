@@ -37,8 +37,8 @@ namespace IdentityServer
             {
                 new Client
                 {
-                    ClientId = "ConsoleApp_ClientId",
-                    ClientSecrets = { new Secret("secret_for_the_consoleapp".Sha256()) },
+                    ClientId = "83A0DD78191B4C3F8F932E27E95852E6",
+                    ClientSecrets = { new Secret("15F47BBA443B42D9B5AFA06648477F86".Sha256()) },
                     AccessTokenType = AccessTokenType.Reference,
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     AllowedScopes = { "Api.read" },

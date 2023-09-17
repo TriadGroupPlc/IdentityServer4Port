@@ -16,7 +16,7 @@ namespace IdentityServer4PortConsoleClient.ConsoleApp
             //Ask User
             Console.Write("Username:");
             var username = Console.ReadLine();
-            Console.Write("Password:");
+                Console.Write("Password:");
             var password = Console.ReadLine();
 
             Console.ForegroundColor = ConsoleColor.White;
