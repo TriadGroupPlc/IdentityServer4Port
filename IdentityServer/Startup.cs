@@ -20,6 +20,7 @@
             }
                 )
                 .AddInMemoryIdentityResources(Config.IdentityResources())
+                .AddInMemoryApiScopes(Config.ApiScopes())
                 .AddInMemoryApiResources(Config.Apis())
                 .AddInMemoryClients(Config.Clients())
                 .AddJwtBearerClientAuthentication()
