@@ -14,4 +14,4 @@ The Razor pages have yet to ported over however there are already a number of we
 
 ## Further reading
 ### IdentityServer4 setup
-You can view the IdentityServer4 guide [here]()
+You can view the IdentityServer4 guide [here](https://github.com/TriadGroupPlc/IdentityServer4Port/blob/master/IdentityServer/README.md)
