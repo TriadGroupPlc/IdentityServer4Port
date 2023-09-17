@@ -16,14 +16,15 @@ namespace IdentityServer4PortApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthorization();
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                     .AddIdentityServerAuthentication(options =>
                     {
                         options.Authority = "http://localhost:5000";
                         options.RequireHttpsMetadata = false;
 
-                        options.ApiName = "ApiName";
-                        options.ApiSecret = "secret_for_the_api";
+                        options.ApiName = "IdentityServer4PortClientApi";
+                        options.ApiSecret = "D46CB03C51C74D998B331066816B133F";
                     });
         }
 
@@ -40,6 +41,8 @@ namespace IdentityServer4PortApi
             {
                 app.UseHsts();
             }
+
+            app.UseAuthorization();
 
             //app.UseRouting();
 

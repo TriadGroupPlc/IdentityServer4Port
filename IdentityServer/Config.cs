@@ -19,17 +19,17 @@ namespace IdentityServer
         public static IEnumerable<ApiResource> Apis() =>
             new List<ApiResource>
             {
-                new ApiResource("ApiName")
+                new ApiResource("IdentityServer4PortClientApi")
                 {
                     Scopes = new List<string>{ "Api.read", "Api.write" },
-                    ApiSecrets = { new Secret("secret_for_the_api".Sha256()) }
+                    ApiSecrets = { new Secret("D46CB03C51C74D998B331066816B133F".Sha256()) }
                 }
             };
 
         public static IEnumerable<ApiScope> ApiScopes() =>
             new List<ApiScope>
             {
-                new ApiScope("ApiName", "My API")
+                new ApiScope("IdentityServer4PortClientApi", "My API")
             };
 
         public static IEnumerable<Client> Clients() =>
